@@ -143,3 +143,39 @@ button {
   body { padding: 10px; }
   .card, form { width: 90%; }
 }
+// Armazenamento local
+let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+let movimentacoes = JSON.parse(localStorage.getItem("movimentacoes")) || [];
+
+// Login fake
+function login(e){
+  e.preventDefault();
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+  if(email && senha){
+    alert("Login realizado!");
+    window.location.href = "dashboard.html";
+  }
+}
+
+// Produtos
+function cadastrarProduto(e){
+  e.preventDefault();
+  const nome = document.getElementById("nome").value;
+  const quantidade = document.getElementById("quantidade").value;
+  const preco = document.getElementById("preco").value;
+  produtos.push({nome, quantidade, preco});
+  localStorage.setItem("produtos", JSON.stringify(produtos));
+  alert("Produto cadastrado!");
+}
+
+// Movimentações
+function registrarMovimentacao(e){
+  e.preventDefault();
+  const produto = document.getElementById("produto").value;
+  const quantidade = document.getElementById("quantidade").value;
+  const tipo = document.getElementById("tipo").value;
+  movimentacoes.push({produto, quantidade, tipo, data: new Date()});
+  localStorage.setItem("movimentacoes", JSON.stringify(movimentacoes));
+  alert("Movimentação registrada!");
+}
