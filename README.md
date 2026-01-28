@@ -99,3 +99,47 @@
   </ul>
 </body>
 </html>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.card, form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, button, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background: #0a7cff;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.menu a {
+  display: block;
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+@media(max-width:600px){
+  body { padding: 10px; }
+  .card, form { width: 90%; }
+}
