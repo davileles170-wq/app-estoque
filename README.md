@@ -35,3 +35,25 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Produtos</h2>
+  <form id="form-produto" onsubmit="cadastrarProduto(event)">
+    <input id="nome" placeholder="Nome do produto" required>
+    <input id="quantidade" type="number" placeholder="Quantidade" required>
+    <input id="preco" type="number" step="0.01" placeholder="Preço" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <ul id="lista-produtos"></ul>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
