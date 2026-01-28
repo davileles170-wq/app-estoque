@@ -179,3 +179,23 @@ function registrarMovimentacao(e){
   localStorage.setItem("movimentacoes", JSON.stringify(movimentacoes));
   alert("Movimentação registrada!");
 }
+{
+  "name": "Controle de Estoque",
+  "short_name": "Estoque",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a7cff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
