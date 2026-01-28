@@ -57,3 +57,28 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movimentações</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Movimentações</h2>
+  <form onsubmit="registrarMovimentacao(event)">
+    <input id="produto" placeholder="Produto" required>
+    <input id="quantidade" type="number" placeholder="Quantidade" required>
+    <select id="tipo">
+      <option value="entrada">Entrada</option>
+      <option value="saida">Saída</option>
+    </select>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <ul id="lista-movimentacoes"></ul>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
